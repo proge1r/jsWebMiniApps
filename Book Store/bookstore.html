@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Store - Online Shop</title>
+    <link rel="stylesheet" href="bookstore.css">
+</head>
+<body>
+
+<div class="store-wrapper">
+    <div class="books-grid">
+        <h2>Available Books</h2>
+        <div class="grid-container">
+            
+            <div class="book-item">
+                <img src="imgs/b1.jpg" alt="Book 1">
+                <div class="item-details">
+                    <h3>Becoming Better</h3>
+                    <p class="author">by Ryan Gottfredson</p>
+                    <span class="price">$25.00</span>
+                    <button class="select-btn" onclick="selectBook('JavaScript Mastery')">Buy</button>
+                </div>
+            </div>
+
+            <div class="book-item">
+                <img src="imgs/b2.jpg" alt="Book 2">
+                <div class="item-details">
+                    <h3>Atomic Habits</h3>
+                    <p class="author">by James Clear</p>
+                    <span class="price">$22.00</span>
+                    <button class="select-btn" onclick="selectBook('Mindset Mastery')">Buy</button>
+                </div>
+            </div>
+
+            <div class="book-item">
+                <img src="imgs/b3.jpg" alt="Book 3">
+                <div class="item-details">
+                    <h3>Big Magic</h3>
+                    <p class="author">by Elizabeth Gilbert</p>
+                    <span class="price">$30.00</span>
+                    <button class="select-btn" onclick="selectBook('Clean Code')">Buy</button>
+                </div>
+            </div>
+
+            <div class="book-item">
+                <img src="imgs/b4.jpg" alt="Book 4">
+                <div class="item-details">
+                    <h3>The Gifts of Imperfection</h3>
+                    <p class="author">by Brené Brown</p>
+                    <span class="price">$18.00</span>
+                    <button class="select-btn" onclick="selectBook('Atomic Habits')">Buy</button>
+                </div>
+            </div>
+
+            <div class="book-item">
+                <img src="imgs/b5.jpg" alt="Book 5">
+                <div class="item-details">
+                    <h3>Mindset</h3>
+                    <p class="author">by Carol Dweck</p>
+                    <span class="price">$28.00</span>
+                    <button class="select-btn" onclick="selectBook('Pragmatic Programmer')">Buy</button>
+                </div>
+            </div>
+
+            <div class="book-item">
+                <img src="imgs/b6.jpg" alt="Book 6">
+                <div class="item-details">
+                    <h3>Start With Why</h3>
+                    <p class="author">by Simon Sinek</p>
+                    <span class="price">$26.00</span>
+                    <button class="select-btn" onclick="selectBook('Eloquent JavaScript')">Buy</button>
+                </div>
+            </div>
+
+            <div class="book-item">
+                <img src="imgs/b7.jpg" alt="Book 7">
+                <div class="item-details">
+                    <h3>The Daily Stoic</h3>
+                    <p class="author">by Ryan Holiday</p>
+                    <span class="price">$19.00</span>
+                    <button class="select-btn" onclick="selectBook('Deep Work')">Buy</button>
+                </div>
+            </div>
+
+            <div class="book-item">
+                <img src="imgs/b8.jpg" alt="Book 8">
+                <div class="item-details">
+                    <h3>The Mountain Is You</h3>
+                    <p class="author">by Brianna Wiest</p>
+                    <span class="price">$32.00</span>
+                    <button class="select-btn" onclick="selectBook('Refactoring')">Buy</button>
+                </div>
+            </div>
+
+        </div> </div> <div class="order-container">
+        <h2>Place Your Order</h2>
+        <form id="orderForm">
+            <label>Book Title:</label>
+            <input type="text" id="bookSelect" readonly placeholder="Select a book first">
+
+            <label>Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1" required>
+
+            <label>Your Name:</label>
+            <input type="text" id="customerName" placeholder="Full name" required>
+
+            <label>Delivery Date:</label>
+            <input type="date" id="deliveryDate" required>
+
+            <label>Address:</label>
+            <textarea id="address" rows="2" placeholder="Street, City, Zip Code" required></textarea>
+
+            <button type="submit" id="buyBtn">Confirm Order</button>
+        </form>
+        <div id="orderSummary" class="summary-box"></div>
+    </div>
+</div>
+
+<script src="bookstore.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="forum-container">
+    <h2>General Knowledge Test</h2>
+    
+    <form id="quizForm">
+        <div class="question">
+            <p>1. Which language is used for web logic?</p>
+            <label><input type="radio" name="q1" value="correct"> JavaScript</label><br>
+            <label><input type="radio" name="q1" value="wrong"> Python</label>
+        </div>
+
+        <br>
+
+        <div class="question">
+            <p>2. What does HTML stand for?</p>
+            <label><input type="radio" name="q2" value="wrong"> High Text Markup Lang</label><br>
+            <label><input type="radio" name="q2" value="correct"> HyperText Markup Language</label>
+        </div>
+
+        <br>
+
+        <button type="submit">Submit Results</button>
+    </form>
+
+    <div id="resultDisplay" style="margin-top: 20px; text-align: center; font-size: 1.2em;"></div>
+</div>
+
+<script src="test.js"></script>
+</body>
+</html>

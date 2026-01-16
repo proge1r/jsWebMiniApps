@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Stylizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="forum-container">
+    <h2>Text Stylizer</h2>
+    
+    <form id="stylizerForm">
+        <textarea id="sourceText" rows="3" placeholder="Enter your text here..." required></textarea>
+
+        <div class="options-group">
+            <strong>Formatting:</strong><br>
+            <label><input type="checkbox" id="bold"> Bold</label>
+            <label><input type="checkbox" id="underline"> Underline</label>
+            <label><input type="checkbox" id="italic"> Italic</label>
+        </div>
+
+        <div class="options-group">
+            <strong>Alignment:</strong><br>
+            <label><input type="radio" name="align" value="left" checked> Left</label>
+            <label><input type="radio" name="align" value="center"> Center</label>
+            <label><input type="radio" name="align" value="right"> Right</label>
+            <label><input type="radio" name="align" value="justify"> Justify</label>
+        </div>
+
+        <button type="submit">Apply Styles</button>
+    </form>
+
+    <hr>
+    <div id="outputContainer" style="min-height: 50px; padding: 10px; border: 1px dashed #ccc;">
+        <p id="displayText">Your styled text will appear here...</p>
+    </div>
+</div>
+
+<script src="stylizer.js"></script>
+</body>
+</html>

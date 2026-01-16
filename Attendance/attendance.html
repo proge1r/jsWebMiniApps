@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance Tracking</title>
+    <link rel="stylesheet" href="attendance.css">
+</head>
+<body>
+
+<div class="app-container">
+    <h2>Attendance System</h2>
+
+    <div class="form-section">
+        <h3>Mark New Lesson</h3>
+        <form id="attendanceForm">
+            <div class="input-row">
+                <select id="groupSelect" required>
+                    <option value="" disabled selected>Select Group</option>
+                    <option value="P-11">P-11</option>
+                    <option value="P-12">P-12</option>
+                </select>
+
+                <select id="lessonSelect" required>
+                    <option value="" disabled selected>Lesson Number</option>
+                    <option value="1">1st Lesson</option>
+                    <option value="2">2nd Lesson</option>
+                    <option value="3">3rd Lesson</option>
+                </select>
+            </div>
+
+            <input type="text" id="topicInput" placeholder="Lesson Topic" required>
+
+            <div class="students-list">
+                <strong>Students Presence:</strong>
+                <label><input type="checkbox" class="student-check" value="Daniil Vladyko"> Daniil Vladyko</label>
+                <label><input type="checkbox" class="student-check" value="Ivan Ivanov"> Ivan Ivanov</label>
+                <label><input type="checkbox" class="student-check" value="Maria Smith"> Maria Smith</label>
+            </div>
+
+            <button type="submit" id="saveBtn">Save Attendance</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <div class="history-section">
+        <h3>Attendance Logs</h3>
+        <div id="logsDisplay">
+            <p class="empty-msg">No logs saved yet.</p>
+        </div>
+    </div>
+</div>
+
+<script src="attendance.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Train Ticket Booking</title>
+    <link rel="stylesheet" href="train.css">
+</head>
+<body>
+
+<div class="booking-container">
+    <h2>Train Reservation System</h2>
+
+    <div class="search-box">
+        <select id="routeSelect">
+            <option value="" disabled selected>Select Route</option>
+            <option value="Kyiv - Lviv">Kyiv - Lviv</option>
+            <option value="Odesa - Warsaw">Odesa - Dnieper</option>
+        </select>
+        <input type="date" id="travelDate">
+        <button id="showSeatsBtn">Show Seats</button>
+    </div>
+
+    <div id="seatingArea" class="hidden">
+        <h3>Select Your Seats</h3>
+        <div class="train-coach" id="coach">
+            </div>
+        <button id="bookNowBtn">Book Selected Tickets</button>
+    </div>
+
+    <hr>
+
+    <div class="history-box">
+        <h3>Your Bookings</h3>
+        <div id="bookingList">
+            <p class="empty-msg">No tickets booked yet.</p>
+        </div>
+    </div>
+</div>
+
+<script src="train.js"></script>
+</body>
+</html>
